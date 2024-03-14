@@ -17,7 +17,7 @@ describe("Scoring Rubric Built-ins", () => {
 
     for (const word of words) {
       if (!builtIns.has(word)) {
-        const counter = wordScoreCommentDetails[word] || ZERO;
+        const counter: Decimal = wordScoreCommentDetails[word] || ZERO;
         wordScoreCommentDetails[word] = counter;
       }
     }
